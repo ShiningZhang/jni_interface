@@ -26,6 +26,15 @@
             __android_log_print(ANDROID_LOG_ERROR, TAG,__VA_ARGS__); \
     } while(0)
 
+#define BOOLEAN_TYPE "Z"
+#define BYTE_TYPE    "B"
+#define CHAR_TYPE    "C"
+#define SHORT_TYPE   "S"
+#define INT_TYPE     "I"
+#define LONG_TYPE    "J"
+#define FLOAT_TYPE   "F"
+#define DOUBLE_TYPE  "D"
+
 const char* string2char(JNIEnv *env, jstring s);
 
 JNIEXPORT jstring JNICALL char2string(JNIEnv *env, const char * s);
